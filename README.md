@@ -2,7 +2,7 @@
 
 CSV 기반 퍼널/리텐션/세그먼트/구독 분석 SaaS 대시보드입니다. 이커머스와 구독 서비스 데이터를 자동 감지하여 전환 퍼널, 코호트 리텐션, 세그먼트 비교, AI 인사이트를 제공합니다.
 
-**Live**: https://fre-analytics-castletaek9643-9522s-projects.vercel.app
+**Live**: https://fre-analytics.vercel.app
 
 ## 프로젝트 구조
 
