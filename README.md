@@ -60,7 +60,7 @@
 | `n8n-workflow-template.json`, `N8N_QUICKSTART.md` | 예전 버전에서 리포트를 메일로 보내던 n8n 워크플로 템플릿과 안내 |
 | [`sql-analysis/`](sql-analysis/README.md) | BigQuery 공개 데이터(Google Merchandise Store)로 퍼널·리텐션·세그먼트를 분석한 SQL 5개와 노트북 5개. 앱과 독립된 분석 작업입니다 |
 | [`ml-analysis/`](ml-analysis/README.md) | RFM 세그멘테이션(K-Means)과 이탈 예측 모델링 노트북 5개. 앱과 독립이며 데이터 파일은 저장소에 없습니다 |
-| `docs/` | 화면 캡처(`screenshots/`), 인증 메일 템플릿, 개발 중 작성한 기획·점검 문서 |
+| `docs/` | 화면 캡처(`screenshots/`)와 인증 메일 템플릿(`email-templates/`) |
 
 ## 설계 결정
 

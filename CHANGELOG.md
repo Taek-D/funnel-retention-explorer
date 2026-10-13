@@ -21,9 +21,6 @@ All notable changes to Funnel & Retention Explorer are documented in this file.
 - Mobile responsive UI: sidebar drawer, scroll-aware header, hero animations (`c8b53b7`)
 - UI refinement across all components and page layouts (`bd492b3`)
 
-### Added — Developer Tooling
-- Claude Code project configuration, custom commands, hooks (`fb2e3f2`, `6291cd4`, `b313b43`, `b49257a`)
-
 ### Fixed
 - Netlify config updated to build React frontend (`07a137a`)
 - Handle missing Supabase env vars to prevent blank page (`55df7c8`, `9461454`)

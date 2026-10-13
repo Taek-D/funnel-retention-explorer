@@ -9,3 +9,7 @@ dist/
 /docs/.bkit-memory.json
 /docs/.pdca-status.json
 /docs/.pdca-snapshots/
+/docs/archive/
+/docs/03-analysis/
+/docs/04-report/
+/docs/MONETIZATION-ROADMAP.md
