@@ -770,14 +770,14 @@ export async function updateMemberRole(
 // Sensitive config fields that should be masked on the client
 const SENSITIVE_CONFIG_KEYS = ['password', 'accessToken', 'refreshToken', 'apiSecret'];
 
-function maskSensitiveConfig(config: Record<string, unknown>): Record<string, unknown> {
-  const masked = { ...config };
+function maskSensitiveConfig<T extends object>(config: T): T {
+  const masked = { ...config } as Record<string, unknown>;
   for (const key of SENSITIVE_CONFIG_KEYS) {
     if (typeof masked[key] === 'string' && (masked[key] as string).length > 0) {
       masked[key] = '••••••••';
     }
   }
-  return masked;
+  return masked as T;
 }
 
 export async function listConnectors(): Promise<ConnectorInstance[]> {
@@ -789,7 +789,7 @@ export async function listConnectors(): Promise<ConnectorInstance[]> {
   if (error) throw new Error(error.message);
   return ((data || []) as ConnectorInstance[]).map(c => ({
     ...c,
-    config: maskSensitiveConfig(c.config as Record<string, unknown>) as ConnectorConfigData,
+    config: maskSensitiveConfig(c.config),
   }));
 }
 

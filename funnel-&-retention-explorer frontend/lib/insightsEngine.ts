@@ -19,7 +19,7 @@ export function generateInsights(
   churnAnalysis: ChurnAnalysis | null,
   paidRetention: RetentionCohort[] | null
 ): Insight[] {
-  const cacheKey = `${detectedType || 'none'}|${subscriptionKPIs?.mrr ?? ''}|${trialAnalysis?.overall?.conversion_rate ?? ''}|${churnAnalysis?.churn_rate_paid ?? ''}|${paidRetention?.length ?? 0}`;
+  const cacheKey = `${detectedType || 'none'}|${subscriptionKPIs?.paid_user_count ?? ''}|${trialAnalysis?.overall?.conversion_rate ?? ''}|${churnAnalysis?.churn_rate_paid ?? ''}|${paidRetention?.length ?? 0}`;
   const cached = getCached(insightsCache, processedData, cacheKey);
   if (cached) return cached;
 

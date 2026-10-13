@@ -88,7 +88,7 @@ export const FunnelBreakdownPanel: React.FC<FunnelBreakdownPanelProps> = ({ data
                     <YAxis axisLine={false} tickLine={false} tick={{ fill: CHART_COLORS.axisTextSecondary, fontSize: 11 }} />
                     <Tooltip
                       contentStyle={{ backgroundColor: CHART_COLORS.tooltipBg, borderColor: CHART_COLORS.tooltipBorder, color: '#fff', borderRadius: '6px' }}
-                      formatter={(value: number) => [value.toLocaleString(), t('breakdown.users')]}
+                      formatter={(value?: number) => [(value ?? 0).toLocaleString(), t('breakdown.users')]}
                     />
                     <Legend wrapperStyle={{ fontSize: '11px', color: '#94a3b8' }} />
                     {result.groups.slice(0, 6).map((group, i) => (

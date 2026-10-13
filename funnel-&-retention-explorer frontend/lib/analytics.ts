@@ -9,6 +9,7 @@ type GTagEvent = {
   upgrade_modal_open: { reason: string };
   pro_conversion: { billing_cycle: string };
   signup_complete: Record<string, never>;
+  signup_success: Record<string, never>;
   upgrade_banner_click: { page: string };
   trial_started: Record<string, never>;
   api_import: { connector_id: string; row_count: number };
