@@ -6,3 +6,6 @@ dist/
 /README(Portfolio).md
 /.claude/
 /CLAUDE.md
+/docs/.bkit-memory.json
+/docs/.pdca-status.json
+/docs/.pdca-snapshots/
