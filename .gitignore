@@ -1,3 +1,8 @@
 .playwright-mcp/
 dist/
 .bkit/
+
+# 로컬 전용 작업 문서·도구 설정
+/README(Portfolio).md
+/.claude/
+/CLAUDE.md
